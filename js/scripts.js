@@ -7,7 +7,7 @@ $(document).ready(function(){
     var name = $("#name input").val();
     var age = parseInt($("#age input").val());
     var entertainment = $("#entertainment").val();
-    var result = "Thanks, " + name + ", your ideal celebrity partner is: ";
+    var result = "Thanks, <strong>" + name + "</strong>, your ideal celebrity partner is: ";
 
     // prevent form submition default action
     event.preventDefault();
@@ -44,15 +44,14 @@ $(document).ready(function(){
     $("#form-wrapper").hide();
 
     // uses name variable as part of the results display
-    $(".result").text(result);
-    
+    $(".result").html(result);
+
     // check if user young or "seasoned"
     if (age >= 40) {
       // if user is greater than or equal to 40, check prefered entertainment
       // show specific result
       if (entertainment === "music") {
         $("#old-music").show();
-
       } else if (entertainment === "books") {
         $("#old-books").show();
       } else {
