@@ -6,6 +6,11 @@ button {
   margin-top: 10px;
 }
 
+img {
+  width: 50%;
+  height: auto;
+}
+
 #entertainment {
   width: 200px;
 }
