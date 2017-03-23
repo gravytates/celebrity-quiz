@@ -1,0 +1,15 @@
+input {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#entertainment {
+  width: 200px;
+}
+
+.not-showing {
+  display: none;
+}

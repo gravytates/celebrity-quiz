@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- current version of bootstrap as of March 20, 2017. Uncomment to use -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- current version of jQuery as of March 20, 2017 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Celebrity Dating Site</title>
+  </head>
+  <body>
+    <!-- begin container -->
+    <div class="container">
+
+    <h1>Celebrity Dating Site</h1>
+
+    <div id="form-wrapper">
+      <form id="questionaire">
+        <div id="name">
+          <label>Name</label><br>
+          <input></input>
+        </div>
+
+        <div id="age">
+          <label>Age</label><br>
+          <input></input>
+        </div>
+
+        <!-- <div id="entertainment">
+          <label>How do you spend your free time?</label><br>
+          <label>
+            <input type="radio" name="entertainment" value="music"> Listen to Music</input>
+          </label><br>
+          <label>
+            <input type="radio" name="entertainment" value="books"> Read Books</input>
+          </label><br>
+          <label>
+            <input type="radio" name="entertainment" value="movies"> Watch Movies</input>
+          </label>
+        </div> -->
+        <div class="form-group">
+          <label for="entertainment">How do you spend your free time?</label>
+          <select class="form-control" id="entertainment">
+            <option selected="selected" disabled>Choose your activity...</option>
+            <option value="music">Listen to Music</option>
+            <option value="books">Read books</option>
+            <option value="movies">Watch Movies</option>
+
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-default">Find Your Celebrity Sweetie!</button>
+      </form>
+    </div>
+
+    <!-- results -->
+    <div class="not-showing" id="young-movie">
+      <p>
+        Anne Hathaway
+      </p>
+    </div>
+
+    <div class="not-showing" id="young-book">
+      <p>
+        R.L. Stein
+      </p>
+    </div>
+
+    <div class="not-showing" id="young-music">
+      <p>
+        Drake
+      </p>
+    </div>
+
+    <div class="not-showing" id="old-movie">
+      <p>
+        Meryl Streep
+      </p>
+    </div>
+
+    <div class="not-showing" id="old-book">
+      <p>
+        Stephen King
+      </p>
+    </div>
+
+    <div class="not-showing" id="old-music">
+      <p>
+        George Strait
+      </p>
+    </div>
+
+    <!-- end container -->
+    </div>
+
+  </body>
+</html>
