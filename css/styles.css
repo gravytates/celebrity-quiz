@@ -13,3 +13,8 @@ button {
 .not-showing {
   display: none;
 }
+
+.warning {
+  display: none;
+  color: red;
+}

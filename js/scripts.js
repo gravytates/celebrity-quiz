@@ -8,6 +8,28 @@ $(document).ready(function(){
 
     event.preventDefault();
 
+    if (!name) {
+      $("#name-warning").show();
+      exit;
+    } else {
+      $("#name-warning").hide();
+    };
+
+
+    if (!age) {
+      $("#age-warning").show();
+      exit;
+    } else {
+      $("#age-warning").hide();
+    };
+
+    if (!entertainment) {
+      $("#entertainment-warning").show();
+      exit;
+    } else {
+      $("#entertainment-warning").hide();
+    };
+
     $("#form-wrapper").hide();
     // check if user young or seasoned
     if (age >= 40) {
@@ -29,8 +51,6 @@ $(document).ready(function(){
       } else {
         $("#young-movies").show();
       }
-
-
 
     }; // end conditionals
 

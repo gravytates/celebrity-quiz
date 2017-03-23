@@ -20,26 +20,14 @@
       <form id="questionaire">
         <div id="name">
           <label>Name</label><br>
-          <input></input>
+          <input></input><span class="warning" id="name-warning">Please enter your name</span>
         </div>
 
         <div id="age">
           <label>Age</label><br>
-          <input></input>
+          <input></input><span class="warning" id="age-warning">Please enter your age</span>
         </div>
 
-        <!-- <div id="entertainment">
-          <label>How do you spend your free time?</label><br>
-          <label>
-            <input type="radio" name="entertainment" value="music"> Listen to Music</input>
-          </label><br>
-          <label>
-            <input type="radio" name="entertainment" value="books"> Read Books</input>
-          </label><br>
-          <label>
-            <input type="radio" name="entertainment" value="movies"> Watch Movies</input>
-          </label>
-        </div> -->
         <div class="form-group">
           <label for="entertainment">How do you spend your free time?</label>
           <select class="form-control" id="entertainment">
@@ -48,10 +36,10 @@
             <option value="books">Read books</option>
             <option value="movies">Watch Movies</option>
 
-          </select>
+          </select><span class="warning" id="entertainment-warning">Please select an option</span>
         </div>
 
-        <button type="submit" class="btn btn-default">Find Your Celebrity Sweetie!</button>
+        <button type="submit" class="btn btn-info">Find Your Celebrity Sweetie!</button>
       </form>
     </div>
 
@@ -64,7 +52,7 @@
 
     <div class="not-showing" id="young-books">
       <p>
-        R.L. Stein
+        Jack Black as R.L. Stein
       </p>
     </div>
 
